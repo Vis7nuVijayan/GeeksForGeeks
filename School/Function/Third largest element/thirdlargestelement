@@ -1,0 +1,18 @@
+ /* The function should return third largest element 
+     in arr[0..n-1]. It may be assumed that all elements
+     are distinct.  */
+#include <algorithm>
+//#include <array>
+
+int thirdLargest(int a[], int n)
+{
+    //Your code here
+    if(n < 3)
+        return -1;
+    
+    else
+    {
+        sort(a, a+n);
+        return a[n-3];
+    }
+}

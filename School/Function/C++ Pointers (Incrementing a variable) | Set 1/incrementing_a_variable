@@ -1,0 +1,12 @@
+/*Please note that it's Function problem i.e.
+you need to write your solution in the form of Function(s) only.
+Driver Code to call/invoke your function is mentioned above.*/
+
+/* This function is invoked by passing the address of the variable.
+    You need to increment the value stored in the variable by 10 */
+/* complete the function below */
+void updateVar(int *a)
+{
+      // write your code here
+      *a = *a +10;
+}

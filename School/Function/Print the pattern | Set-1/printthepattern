@@ -1,0 +1,22 @@
+/*You are required to complete this method*/
+
+void print(int i, int count)
+{
+    while(count--)
+    {
+        cout << i << " ";
+    }
+}
+
+void printPat(int n)
+{
+    //Your code here
+    int count = n;
+    while(count--)
+    {
+        for(int i=n;i>=1;--i)
+            print(i,count+1);
+        
+        cout << "$";
+    }
+}

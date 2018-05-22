@@ -1,0 +1,30 @@
+/*You have to complete this function*/
+
+void printSpaceString(char str[], char buffer[], int str_index, int buffer_index, int slen)
+{
+    if(str_index == slen)
+    {
+        buffer[buffer_index] = '\0';
+        cout << buffer << "$";
+        return;
+    }
+    
+    buffer[buffer_index] = str[str_index];
+    printSpaceString(str, buffer, str_index+1, buffer_index+1, slen);
+    
+    buffer[buffer_index] = ' ';
+    buffer[buffer_index+1] = str[str_index];
+    printSpaceString(str, buffer, str_index+1, buffer_index+2, slen);
+}
+
+void  printSpace(char str[])
+{
+    //Your code here
+    int slen = strlen(str);
+    
+    char buffer[2*slen];
+    
+    buffer[0] = str[0];
+    
+    printSpaceString(str, buffer, 1, 1, slen);
+}

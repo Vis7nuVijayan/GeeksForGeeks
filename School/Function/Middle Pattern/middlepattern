@@ -1,0 +1,35 @@
+/*method prints the given pattern in a single line */
+
+void printSpace(int n)
+{
+    for(int i=0;i<n;++i)
+        cout << "  ";
+}
+
+void printString(string s, int start, int end)
+{
+    for(int i=start; i<=end;++i)
+        cout << s[i];
+}
+
+void printPattern(string s)
+{
+    //Your code here
+    int slen = s.length();
+    int mid = slen/2;
+    
+    string new_s;
+    
+    for(int i=mid;i<slen;++i)
+        new_s += s[i];
+    
+    for(int i=0;i<mid;++i)
+        new_s += s[i];
+    
+    for(int i=slen-1;i>=0;--i)
+    {
+        printSpace(i);
+        printString(new_s,0,slen-i-1);
+        cout << "$";
+    }
+}

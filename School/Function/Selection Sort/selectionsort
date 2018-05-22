@@ -1,0 +1,29 @@
+/* The task is to complete select() which is used 
+   as shown below to implement selectionSort() 
+ 
+A function to implement selection sort
+void selectionSort(int arr[], int n) {
+   int i, j;
+   for (i = n-1; i >=0; i--)     {
+        int j = select(arr, i);
+        swap(&arr[i], &arr[j]);
+   }
+}  */
+
+int select(int arr[], int i)
+{
+    // Your code here
+    int max = arr[0];
+    int max_index = 0;
+    for(int j=1;j<=i;++j)
+    {
+        if(arr[j] > max)
+        {
+            max = arr[j];
+            max_index = j;
+        }
+    }
+    
+    return max_index;
+}
+

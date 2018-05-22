@@ -1,0 +1,34 @@
+/*You are required to complete this function*/
+
+long GCD(long a, long b)
+{
+    while(a != b)
+    {
+        if(a > b)
+            a=a-b;
+
+        else
+            b=b-a;
+    }
+
+    return b;
+}
+
+void addFraction(int num1, int den1, int num2,int den2)
+{
+    //Your code here
+    long num = (long)num1*den2+(long)num2*den1;
+    long den = (long)den1*den2;
+
+    long gcd = GCD(num,den);
+
+    while(gcd != 1)
+    {
+        num = num/gcd;
+        den = den/gcd;
+
+        gcd = GCD(num,den);
+    }
+
+    cout << num << "/" << den << endl;
+}

@@ -1,0 +1,12 @@
+#include <cmath>
+
+int isPowerOfFour(unsigned int n)
+{
+    // Your code goes here
+    double power = log(n)/log(4);
+    
+    if(pow(4,floor(power)) == n)
+        return 1;
+    
+    return 0;
+}

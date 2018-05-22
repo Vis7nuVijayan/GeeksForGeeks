@@ -1,0 +1,18 @@
+/*you are required to complete this method*/
+
+int convertFive(int n)
+{
+    //Your code here
+    string s = to_string(n);
+    string ss;
+    for(char c : s)
+    {
+        if(c == '0')
+            ss += '5';
+        
+        else
+            ss += c;
+    }
+    
+    return stoi(ss);
+}

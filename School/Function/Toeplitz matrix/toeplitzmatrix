@@ -1,0 +1,19 @@
+/*You are required to complete this method*/
+
+bool isToepliz(int A[MAX][MAX],int N,int M)
+{
+    //Your code here
+    int i=0;
+    int same = A[i][i];
+    ++i;
+    
+    while(i<N && i<M)
+    {
+        if(A[i][i] != same)
+            return false;
+        
+        ++i;
+    }
+    
+    return true;
+}
