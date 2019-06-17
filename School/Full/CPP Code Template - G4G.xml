@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="org.eclipse.cdt.core.cxxSource.contenttype_context" deleted="false" description="GeeksForGeeks C++ Template" enabled="true" name="GeeksForGeeks C++ Source File">/*
+ * ${project_name}
+ *
+ *		Author : Vishnu Vijayan
+ *		  Date : ${date}
+ *		  Time : ${time}
+ *
+ */
+
+using namespace std;
+
+#include &lt;iostream&gt;
+
+int main()
+{
+	int testcases;
+	cin &gt;&gt; testcases;
+
+	while(testcases--)
+	{
+		
+	}
+
+	return 0;
+}</template></templates>
